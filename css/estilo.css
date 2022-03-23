@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+
+body{
+	background-color: #0B0F18;
+}
+
+
+.hero{
+	position: relative;
+	background-color: #222A39;
+	font-family: sans-serif;
+}
+
+.container{
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+	/*overflow: hidden;*/
+	padding: 100px 0;
+}
+
+.nav{
+	padding: 0;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.title{
+	color: white;
+	font-size: 30px;
+	transition: all 0.5s;
+}
+
+.title:hover{
+	color: #4487DC;
+}
+
+.subtitle{
+	color: #C5C0F0;
+	font-weight: 300;
+}
+
+.search{
+	background-color: #4487DC;
+	border-radius: 5px;
+	color: #ddd;
+	padding: 10px 20px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.search:hover{
+	background-color: #3376cb;
+}
+
+/*------------------------------ MAIN --------------------------------------*/
+
+.main{
+	padding: 0;
+}
+
+.error{
+	background-color: darkred;
+	margin: 20px 0;
+	border-radius: 10px;
+	display: none;
+}
+
+.alaert__caja{
+	display: flex;
+	gap: 2em;
+	color: #eee;
+	padding: 30px 30px;
+	text-align: center;
+	align-items: center;
+	font-family: 'Poppins';
+	font-size: 20px;
+}
+
+.to__do{
+	justify-content: center;
+	margin: 20px 0;
+	padding: 20px;
+}
+
+.todo__create{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2em;
+	margin: 30px 0;
+	align-items: center;
+}
+
+.todo__subtitle{
+	font-family: 'Poppins';
+	font-weight: 300;
+	color: #C5C0F0;
+	width: 100px;
+}
+
+.button__create{
+	font-family: 'Poppins';
+	font-weight: 300;
+	color: #4487DC;
+	padding: 5px 10px;
+	border: 4px solid #4487DC;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s ease;
+	text-align: center;
+
+}
+
+.button__create:hover{
+	background-color: #4487DC;
+	color: white;
+}
+
+/*----------------- Trea ------------------------*/
+
+.list{
+	padding: 10px;
+	font-family: 'Poppins';
+	font-weight: 300;
+}
+
+.list__options{
+	color: #bbb;
+	justify-content: center;
+	display: flex;
+	justify-content: space-between;
+}
+
+.filter__title{
+
+}
+
+.options{
+	list-style: none;
+	display: grid;
+	grid-auto-flow: column;
+	grid-auto-columns: max-content;
+	gap: 2em;
+	color: white;
+	align-items: center;
+}
+
+.fila__tarea{
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-columns: 5% 5% 40% 40%;
+	gap: 1em;
+	color: #ccc;
+	border: 3px solid #F2A516;
+	border-radius: 30px;
+	padding: 20px 30px;
+	margin: 20px;
+}
+
+
+
+.caja__title{
+	display: block;
+	word-wrap: break-word;
+	height: auto;
+	margin: auto 0;
+}
+
+.title__tarea{
+	color: #ccc;
+}
+
+.caja__paragraph{
+	display: block;
+	word-wrap: break-word;
+	height: auto;
+	margin: auto 0;
+}
+
+.description{
+}
+
+.todo__completed{
+	text-align: center;
+	margin: auto 0;
+}
+
+.buttons__edit{
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+
+.edit{
+	background-color: #3247EE;
+	padding: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+
+.edit:hover{
+	background-color: #2433AD;
+}
+
+.remove{
+	background-color: #D93232;
+	padding: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.remove:hover{
+	background-color: #A71515;
+}
+
+
+
+
+
+/* Pruebo cosas */
+
+.old-input{
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+}
+
+.new-task-input__main{
+	flex: 1 1 0%;
+	background-color: #333B4A;
+	border-radius: 1rem;
+	padding: 1rem;
+	color: white;
+	width: 500px;
+}
+
+.new-task-input{
+	flex: 1 1 0%;
+	background-color: #222A39;
+	border-radius: 1rem;
+	padding: 1rem;
+	color: white;
+}
+
+.filter__todo select {
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+.filter__todo{
+	display: inline-block;
+	width: 50%;
+	cursor: pointer;
+  	padding: 7px 10px;
+  	height: 42px;
+  	outline: 0; 
+	background: #222A39;
+	color: #7b7b7b;
+	font-size: 1em;
+	color: #999;
+	font-family: 'Quicksand', sans-serif;
+	border:2px solid rgba(0,0,0,0.2);
+    border-radius: 12px;
+    position: relative;
+    transition: all 0.25s ease;
+}
+
+.filter__todo:hover{
+	background-color: #333b4b;
+}
+
+
+
+/* Modal */
+
+.modal__container{
+	position: fixed;
+	z-index: 1000;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.5);
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
+.modal{
+	background-color: #333b4b;
+	overflow: hidden;
+	padding: 50px;
+	border-radius: 30px;
+	border: 8px solid #222;
+	font-family: 'Poppins';
+	color: whitesmoke;
+	display: grid;
+	position: absolute;
+}
+
+
+
+.nav__modal{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 2em;
+}
+
+.button__close{
+	cursor: pointer;
+}
+
+.modal__data{
+	display: grid;
+	gap: 2em;
+}
+
+.button__modal{
+	font-family: 'Poppins';
+	font-weight: 300;
+	color: #4487DC;
+	padding: 5px 10px;
+	border: 4px solid #4487DC;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s ease;
+	text-align: center;
+
+}
+
+.button__modal:hover{
+	background-color: #4487DC;
+	color: white;
+}
+
+.modal__subtitle{
+	padding: 10px;
+}
+
+.error__modal{
+	background-color: darkred;
+	margin: 20px 0;
+	border-radius: 10px;
+	display: inline-block;
+	margin: 20px 0;
+}
+
+.alert__div{
+	display: flex;
+	justify-content: space-between;
+	gap: 2em;
+	color: #eee;
+	padding: 30px 30px;
+	text-align: center;
+	align-items: center;
+	font-family: 'Poppins';
+	font-size: 20px;
+	max-width: 100px;
+}
+
+.open{
+	display: none;
+}
+
+
+/* Media */
+
+@media (max-width: 500px){
+
+.caja__paragraph{
+	display: none;
+	padding: 0 30px;
+}
+
+.open{
+	background-color: #0E740F;
+	padding: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+	display: block;
+}
+
+
+.open:hover{
+	background-color: #0C520D;
+}
+
+.fila__tarea{
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-columns: 15% 15% 70%;
+	gap: 1em;
+	color: #ccc;
+	border: 3px solid #F2A516;
+	border-radius: 30px;
+	padding: 20px 30px;
+	margin: 20px;
+}
+
+.title__tarea{
+	padding:  0 30px;
+}
+
+}

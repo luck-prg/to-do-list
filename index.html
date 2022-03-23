@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>To Do</title>
+	<link rel="icon" href="img/correcto.png">
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+	<!---------BOXICON---------->
+	<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+
+
+	<header class="hero">
+		<nav class="container nav">
+			<div class="logo__nav">
+				<h1 class="title">To Do List</h1>
+			</div>
+			<!-- <div class="nav__search">
+				<input class="new-task-input__main old-input" type="text" name="search" class="search__Text">
+			</div>
+			<div class="search" id="search_btn">
+				<h3 class="texto">Search</h3>
+			</div> -->
+		</nav>
+	</header>
+
+	<section class="modal__container" id="modal">
+		<div class="modal">
+			<section class="error__modal" id="alert__modal">
+				<div class="alert__div">
+					<i class='bx bx-x-circle'></i>
+					<h4 class="text__Eror">Title and description are required</h4>
+				</div>
+			</section> 
+			<div class="nav__modal">
+				<h2 class="title__modal">Edit To Do</h3>
+				<div class="button__close" id="close__modal">
+					<i class='bx bx-x-circle bx-md'></i>
+				</div>
+			</div>
+			<div class="modal__data">
+				<div class="todo__edit">
+					<h3 class="modal__subtitle">Title</h3>
+					<input class="new-task-input old-input" type="text" name="title" class="input--title" id="text__edit">
+				</div>
+				<div class="todo__edit">
+					<h3 class="modal__subtitle">Description</h3>
+					<input class="new-task-input old-input" type="text" name="description" class="todo__description" id="description__edit">
+				</div>
+				<div class="button__edit">
+					<h4 class="button__modal" id="edit"> Edit </h4>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<main class="main container">
+		<section class="error" id="alert">
+			<div class="alaert__caja">
+				<i class='bx bx-x-circle'></i>
+				<h4 class="text__Eror">Title and description are required</h4>
+			</div>
+		</section>
+
+		<section class="to__do">
+				<div class="todo__create">
+					<h3 class="todo__subtitle">Title</h3>
+					<input class="new-task-input old-input" type="text" name="title" class="input--title" id="title">
+				</div>
+				<div class="todo__create">
+					<h3 class="todo__subtitle">Description</h3>
+					<input class="new-task-input old-input" type="text" name="description" class="todo__description" id="description">
+				</div>
+				<div class="button__create">
+					<h4 class="button__main" id="add"> Create </h4>
+				</div>
+		</section>
+
+		<section class="list container" id="table">
+			<div class="list__options">
+				<div class="filter__title">
+					<h2 class="subtitle">Filters</h2>
+				</div class="select">
+				<!-- <ul class="options">
+					<li><p><input type="radio" name="Completed"/>Completadas</p></li>
+					<li><p><input type="radio" name="Incompleted"/>Incompletas</p></li>
+					<li><p><input type="radio" name="All"/>Todas</p></li>
+				</ul> -->
+
+				<select class="filter__todo" name= "todos" id="filter">
+					<option value="all"> All </option>
+					<option value="completed"> Completed </option>
+					<option value="uncompleted"> Uncompleted </option>
+				</select>
+			</div>
+
+			<!-- aca van las tareas -->
+
+			
+
+		</section>
+	</main>
+
+	<script type="module" src="js/index.js"></script>
+
+</body>
+</html>
