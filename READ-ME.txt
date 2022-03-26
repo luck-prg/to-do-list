@@ -1,1 +1,0 @@
-Para inciar la aplicacion web es necesario iniciarla en un servidor local debido a que las funcionalidades realizadas con javaScript(js) se encuentran modularizadas.
